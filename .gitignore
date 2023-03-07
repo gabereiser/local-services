@@ -1,0 +1,7 @@
+.vscode
+.DS_Store
+mariadb/.mariadbdata
+mssql/.mssqldata
+mysql/.mysqldata
+postgresql/.pgdata
+redis/.redis
