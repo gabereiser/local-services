@@ -1,6 +1,6 @@
 services:
   php:
-    image: php:8.2-fpm-alpine
+    image: php:fpm-alpine
     ports:
       - 8080:80
     entrypoint: |
