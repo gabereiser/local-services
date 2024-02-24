@@ -1,0 +1,10 @@
+services:
+  php:
+    image: php:8.2-fpm-alpine
+    ports:
+      - 8080:80
+    entrypoint: |
+      mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
+      docker-php-entrypoint
+    volumes:
+      - ./src:/var/www/html
